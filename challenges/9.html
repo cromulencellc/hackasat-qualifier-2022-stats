@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hack-A-Sat 3 Quals Data Dump</title>
+<link href='statdump.css' media='all' rel='stylesheet'>
+<meta charset='utf-8'>
+</head>
+<body>
+<div id='content'>
+<nav>
+<ul>
+<li>
+<a href='../challenges.html'>All Challenges</a>
+</li>
+<li>
+<a href='../index.html'>Statdump Root</a>
+</li>
+</ul>
+</nav>
+<h1>Power Point</h1>
+<p>
+We Get Signal
+</p>
+<p><p>Break out Microsoft Office because its time to make some slides… just kidding!</p>
+
+<p>There is a satellite out there transmitting a flag. You are on a moving platform and you don't know how you will be moving or where the transmitter is or how the transmitter is moving. Luckily you have a steerable antenna! To get the flag:</p>
+
+<ol>
+<li>Find the transmitter by steering the antenna.</li>
+<li>Keep the antenna pointed at the transmitter and try to maximize signal power.</li>
+<li>Decode the samples coming in from your receiver.</li>
+</ol>
+
+
+<p>Your co-worker told you they think the satellites is "North-ish and sort of close to the horizon"</p>
+
+<p>Send <code>az</code>, <code>el</code> commands to the antenna; an antenna command is formatted as a string for example if az=77.1 and el=73.2</p>
+
+<p>send:
+<code>
+77.10,22.2\n
+</code></p>
+
+<p>Please send one command at a time.</p>
+
+<p>After you send a command the receiver will reply with a fixed number of IQ samples via TCP.</p>
+</p>
+<h1>Solution Statistics</h1>
+<table>
+<tbody>
+<tr>
+<th>observations</th>
+<td>144</td>
+</tr>
+<tr>
+<th>solves</th>
+<td>19</td>
+</tr>
+<tr>
+<th>points</th>
+<td>165</td>
+</tr>
+<tr>
+<th>average solve seconds</th>
+<td>
+33571
+seconds, or
+about 9 hours
+</td>
+</tr>
+<tr>
+<th>stddev solve time</th>
+<td>
+25383
+seconds, or
+about 7 hours
+</td>
+</tr>
+</tbody>
+</table>
+<h2>Solutions Over Time</h2>
+<table>
+<thead>
+<tr>
+<th>by time</th>
+<th>solve count</th>
+<th>solve percent</th>
+</tr>
+</thead>
+<tbody></tbody>
+<tr>
+<td>2022-05-22 00:00:00 UTC</td>
+<td>1</td>
+<td>5%</td>
+</tr>
+<tr>
+<td>2022-05-22 01:00:00 UTC</td>
+<td>2</td>
+<td>10%</td>
+</tr>
+<tr>
+<td>2022-05-22 02:00:00 UTC</td>
+<td>4</td>
+<td>21%</td>
+</tr>
+<tr>
+<td>2022-05-22 03:00:00 UTC</td>
+<td>7</td>
+<td>36%</td>
+</tr>
+<tr>
+<td>2022-05-22 04:00:00 UTC</td>
+<td>9</td>
+<td>47%</td>
+</tr>
+<tr>
+<td>2022-05-22 05:00:00 UTC</td>
+<td>9</td>
+<td>47%</td>
+</tr>
+<tr>
+<td>2022-05-22 06:00:00 UTC</td>
+<td>11</td>
+<td>57%</td>
+</tr>
+<tr>
+<td>2022-05-22 07:00:00 UTC</td>
+<td>11</td>
+<td>57%</td>
+</tr>
+<tr>
+<td>2022-05-22 08:00:00 UTC</td>
+<td>11</td>
+<td>57%</td>
+</tr>
+<tr>
+<td>2022-05-22 09:00:00 UTC</td>
+<td>12</td>
+<td>63%</td>
+</tr>
+<tr>
+<td>2022-05-22 10:00:00 UTC</td>
+<td>12</td>
+<td>63%</td>
+</tr>
+<tr>
+<td>2022-05-22 11:00:00 UTC</td>
+<td>12</td>
+<td>63%</td>
+</tr>
+<tr>
+<td>2022-05-22 12:00:00 UTC</td>
+<td>12</td>
+<td>63%</td>
+</tr>
+<tr>
+<td>2022-05-22 13:00:00 UTC</td>
+<td>12</td>
+<td>63%</td>
+</tr>
+<tr>
+<td>2022-05-22 14:00:00 UTC</td>
+<td>12</td>
+<td>63%</td>
+</tr>
+<tr>
+<td>2022-05-22 15:00:00 UTC</td>
+<td>14</td>
+<td>73%</td>
+</tr>
+<tr>
+<td>2022-05-22 16:00:00 UTC</td>
+<td>14</td>
+<td>73%</td>
+</tr>
+<tr>
+<td>2022-05-22 17:00:00 UTC</td>
+<td>16</td>
+<td>84%</td>
+</tr>
+<tr>
+<td>2022-05-22 18:00:00 UTC</td>
+<td>17</td>
+<td>89%</td>
+</tr>
+<tr>
+<td>2022-05-22 19:00:00 UTC</td>
+<td>18</td>
+<td>94%</td>
+</tr>
+<tr>
+<td>2022-05-22 20:00:00 UTC</td>
+<td>19</td>
+<td>100%</td>
+</tr>
+</table>
+<h2>solving teams:</h2>
+<p>solved by 19 teams</p>
+<table>
+<thead>
+<tr>
+<th>team</th>
+<th>solved at</th>
+<th>it took</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>
+<a href='../teams/280.html'>perfect blue</a>
+</th>
+<td>
+2022-05-21 23:02:56 UTC
+</td>
+<td>
+3180
+seconds, or
+0.88
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/48.html'>SingleEventUpset</a>
+</th>
+<td>
+2022-05-22 00:13:27 UTC
+</td>
+<td>
+7300
+seconds, or
+2.03
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/394.html'>mhackeroni</a>
+</th>
+<td>
+2022-05-22 01:40:26 UTC
+</td>
+<td>
+12516
+seconds, or
+3.48
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/38.html'>PPP</a>
+</th>
+<td>
+2022-05-22 01:47:12 UTC
+</td>
+<td>
+12411
+seconds, or
+3.45
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/329.html'>We&#39;re In Ur Sat, Stealin Ur Flag</a>
+</th>
+<td>
+2022-05-22 02:19:39 UTC
+</td>
+<td>
+13942
+seconds, or
+3.87
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/5.html'>SpaceBitsRUs</a>
+</th>
+<td>
+2022-05-22 02:22:04 UTC
+</td>
+<td>
+14968
+seconds, or
+4.16
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/29.html'>Peoples Satellite Libation Venture</a>
+</th>
+<td>
+2022-05-22 02:48:59 UTC
+</td>
+<td>
+16246
+seconds, or
+4.51
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/3.html'>Poland Can Into Space</a>
+</th>
+<td>
+2022-05-22 03:30:47 UTC
+</td>
+<td>
+18956
+seconds, or
+5.27
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/189.html'>Tea MSG</a>
+</th>
+<td>
+2022-05-22 03:45:28 UTC
+</td>
+<td>
+17743
+seconds, or
+4.93
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/279.html'>DiceGang</a>
+</th>
+<td>
+2022-05-22 05:04:52 UTC
+</td>
+<td>
+21648
+seconds, or
+6.01
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/180.html'>PFS</a>
+</th>
+<td>
+2022-05-22 05:19:25 UTC
+</td>
+<td>
+25122
+seconds, or
+6.98
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/66.html'>AutoBAHN</a>
+</th>
+<td>
+2022-05-22 08:27:05 UTC
+</td>
+<td>
+35246
+seconds, or
+9.79
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/712.html'>Chanterelle</a>
+</th>
+<td>
+2022-05-22 14:33:44 UTC
+</td>
+<td>
+29462
+seconds, or
+8.18
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/47.html'>The Braintrust</a>
+</th>
+<td>
+2022-05-22 14:45:49 UTC
+</td>
+<td>
+58551
+seconds, or
+16.26
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/197.html'>Solar Wine</a>
+</th>
+<td>
+2022-05-22 16:36:12 UTC
+</td>
+<td>
+65578
+seconds, or
+18.22
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/92.html'>ShroitPeople</a>
+</th>
+<td>
+2022-05-22 16:50:18 UTC
+</td>
+<td>
+66987
+seconds, or
+18.61
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/27.html'>ADDVulcan</a>
+</th>
+<td>
+2022-05-22 17:46:25 UTC
+</td>
+<td>
+70569
+seconds, or
+19.6
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/232.html'>organizers</a>
+</th>
+<td>
+2022-05-22 18:20:14 UTC
+</td>
+<td>
+71739
+seconds, or
+19.93
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/541.html'>WeltALLES!</a>
+</th>
+<td>
+2022-05-22 19:19:19 UTC
+</td>
+<td>
+75676
+seconds, or
+21.02
+hours
+</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</body>
+</html>

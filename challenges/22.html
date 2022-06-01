@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hack-A-Sat 3 Quals Data Dump</title>
+<link href='statdump.css' media='all' rel='stylesheet'>
+<meta charset='utf-8'>
+</head>
+<body>
+<div id='content'>
+<nav>
+<ul>
+<li>
+<a href='../challenges.html'>All Challenges</a>
+</li>
+<li>
+<a href='../index.html'>Statdump Root</a>
+</li>
+</ul>
+</nav>
+<h1>Once Unop a Djikstar</h1>
+<p>
+Rocinante Strikes Back
+</p>
+<p><p>Great, the fancy new Starlunk constellation won't route my packets  anymore, right before our big trip.</p>
+
+<p>The StarlunkHacks forum thread had a sketchy looking binary. Might as well download that before we leave.</p>
+
+<p>Why did I think working on my honeymoon was a good idea...</p>
+</p>
+<h1>Solution Statistics</h1>
+<table>
+<tbody>
+<tr>
+<th>observations</th>
+<td>284</td>
+</tr>
+<tr>
+<th>solves</th>
+<td>27</td>
+</tr>
+<tr>
+<th>points</th>
+<td>131</td>
+</tr>
+<tr>
+<th>average solve seconds</th>
+<td>
+29875
+seconds, or
+about 8 hours
+</td>
+</tr>
+<tr>
+<th>stddev solve time</th>
+<td>
+26515
+seconds, or
+about 7 hours
+</td>
+</tr>
+</tbody>
+</table>
+<h2>Solutions Over Time</h2>
+<table>
+<thead>
+<tr>
+<th>by time</th>
+<th>solve count</th>
+<th>solve percent</th>
+</tr>
+</thead>
+<tbody></tbody>
+<tr>
+<td>2022-05-21 18:00:00 UTC</td>
+<td>1</td>
+<td>3%</td>
+</tr>
+<tr>
+<td>2022-05-21 19:00:00 UTC</td>
+<td>5</td>
+<td>18%</td>
+</tr>
+<tr>
+<td>2022-05-21 20:00:00 UTC</td>
+<td>6</td>
+<td>22%</td>
+</tr>
+<tr>
+<td>2022-05-21 21:00:00 UTC</td>
+<td>12</td>
+<td>44%</td>
+</tr>
+<tr>
+<td>2022-05-21 22:00:00 UTC</td>
+<td>14</td>
+<td>51%</td>
+</tr>
+<tr>
+<td>2022-05-21 23:00:00 UTC</td>
+<td>16</td>
+<td>59%</td>
+</tr>
+<tr>
+<td>2022-05-22 00:00:00 UTC</td>
+<td>16</td>
+<td>59%</td>
+</tr>
+<tr>
+<td>2022-05-22 01:00:00 UTC</td>
+<td>19</td>
+<td>70%</td>
+</tr>
+<tr>
+<td>2022-05-22 02:00:00 UTC</td>
+<td>19</td>
+<td>70%</td>
+</tr>
+<tr>
+<td>2022-05-22 03:00:00 UTC</td>
+<td>20</td>
+<td>74%</td>
+</tr>
+<tr>
+<td>2022-05-22 04:00:00 UTC</td>
+<td>20</td>
+<td>74%</td>
+</tr>
+<tr>
+<td>2022-05-22 05:00:00 UTC</td>
+<td>21</td>
+<td>77%</td>
+</tr>
+<tr>
+<td>2022-05-22 06:00:00 UTC</td>
+<td>21</td>
+<td>77%</td>
+</tr>
+<tr>
+<td>2022-05-22 07:00:00 UTC</td>
+<td>22</td>
+<td>81%</td>
+</tr>
+<tr>
+<td>2022-05-22 08:00:00 UTC</td>
+<td>22</td>
+<td>81%</td>
+</tr>
+<tr>
+<td>2022-05-22 09:00:00 UTC</td>
+<td>23</td>
+<td>85%</td>
+</tr>
+<tr>
+<td>2022-05-22 10:00:00 UTC</td>
+<td>23</td>
+<td>85%</td>
+</tr>
+<tr>
+<td>2022-05-22 11:00:00 UTC</td>
+<td>23</td>
+<td>85%</td>
+</tr>
+<tr>
+<td>2022-05-22 12:00:00 UTC</td>
+<td>23</td>
+<td>85%</td>
+</tr>
+<tr>
+<td>2022-05-22 13:00:00 UTC</td>
+<td>24</td>
+<td>88%</td>
+</tr>
+<tr>
+<td>2022-05-22 14:00:00 UTC</td>
+<td>24</td>
+<td>88%</td>
+</tr>
+<tr>
+<td>2022-05-22 15:00:00 UTC</td>
+<td>25</td>
+<td>92%</td>
+</tr>
+<tr>
+<td>2022-05-22 16:00:00 UTC</td>
+<td>25</td>
+<td>92%</td>
+</tr>
+<tr>
+<td>2022-05-22 17:00:00 UTC</td>
+<td>25</td>
+<td>92%</td>
+</tr>
+<tr>
+<td>2022-05-22 18:00:00 UTC</td>
+<td>26</td>
+<td>96%</td>
+</tr>
+<tr>
+<td>2022-05-22 19:00:00 UTC</td>
+<td>26</td>
+<td>96%</td>
+</tr>
+<tr>
+<td>2022-05-22 20:00:00 UTC</td>
+<td>27</td>
+<td>100%</td>
+</tr>
+</table>
+<h2>solving teams:</h2>
+<p>solved by 27 teams</p>
+<table>
+<thead>
+<tr>
+<th>team</th>
+<th>solved at</th>
+<th>it took</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>
+<a href='../teams/232.html'>organizers</a>
+</th>
+<td>
+2022-05-21 17:22:58 UTC
+</td>
+<td>
+2833
+seconds, or
+0.79
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/116.html'>0x20F=ma</a>
+</th>
+<td>
+2022-05-21 18:16:20 UTC
+</td>
+<td>
+5966
+seconds, or
+1.66
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/180.html'>PFS</a>
+</th>
+<td>
+2022-05-21 18:28:25 UTC
+</td>
+<td>
+6721
+seconds, or
+1.87
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/541.html'>WeltALLES!</a>
+</th>
+<td>
+2022-05-21 18:37:42 UTC
+</td>
+<td>
+7241
+seconds, or
+2.01
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/280.html'>perfect blue</a>
+</th>
+<td>
+2022-05-21 18:44:31 UTC
+</td>
+<td>
+7519
+seconds, or
+2.09
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/3.html'>Poland Can Into Space</a>
+</th>
+<td>
+2022-05-21 19:31:29 UTC
+</td>
+<td>
+10510
+seconds, or
+2.92
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/38.html'>PPP</a>
+</th>
+<td>
+2022-05-21 20:23:33 UTC
+</td>
+<td>
+12955
+seconds, or
+3.6
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/27.html'>ADDVulcan</a>
+</th>
+<td>
+2022-05-21 20:29:42 UTC
+</td>
+<td>
+13949
+seconds, or
+3.87
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/5.html'>SpaceBitsRUs</a>
+</th>
+<td>
+2022-05-21 20:43:15 UTC
+</td>
+<td>
+14847
+seconds, or
+4.12
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/575.html'>More Smoked Leet Chicken</a>
+</th>
+<td>
+2022-05-21 20:47:19 UTC
+</td>
+<td>
+15012
+seconds, or
+4.17
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/394.html'>mhackeroni</a>
+</th>
+<td>
+2022-05-21 20:49:29 UTC
+</td>
+<td>
+15169
+seconds, or
+4.21
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/238.html'>BAEVR</a>
+</th>
+<td>
+2022-05-21 20:57:23 UTC
+</td>
+<td>
+15704
+seconds, or
+4.36
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/62.html'>Samurai</a>
+</th>
+<td>
+2022-05-21 21:42:31 UTC
+</td>
+<td>
+17777
+seconds, or
+4.94
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/298.html'>ENOFLAG</a>
+</th>
+<td>
+2022-05-21 21:45:16 UTC
+</td>
+<td>
+17540
+seconds, or
+4.87
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/389.html'>1064CBread</a>
+</th>
+<td>
+2022-05-21 22:12:10 UTC
+</td>
+<td>
+19542
+seconds, or
+5.43
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/91.html'>Vim Appreciation Society</a>
+</th>
+<td>
+2022-05-21 22:57:05 UTC
+</td>
+<td>
+22704
+seconds, or
+6.31
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/86.html'>Johns Hackins</a>
+</th>
+<td>
+2022-05-22 00:21:10 UTC
+</td>
+<td>
+27847
+seconds, or
+7.74
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/279.html'>DiceGang</a>
+</th>
+<td>
+2022-05-22 00:29:37 UTC
+</td>
+<td>
+27780
+seconds, or
+7.72
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/66.html'>AutoBAHN</a>
+</th>
+<td>
+2022-05-22 00:48:17 UTC
+</td>
+<td>
+29475
+seconds, or
+8.19
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/24.html'>RCX</a>
+</th>
+<td>
+2022-05-22 02:09:23 UTC
+</td>
+<td>
+34285
+seconds, or
+9.52
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/148.html'>Rocket Surgeons</a>
+</th>
+<td>
+2022-05-22 04:35:07 UTC
+</td>
+<td>
+40866
+seconds, or
+11.35
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/189.html'>Tea MSG</a>
+</th>
+<td>
+2022-05-22 06:50:20 UTC
+</td>
+<td>
+51232
+seconds, or
+14.23
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/184.html'>Katzebin</a>
+</th>
+<td>
+2022-05-22 08:01:37 UTC
+</td>
+<td>
+54053
+seconds, or
+15.01
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/197.html'>Solar Wine</a>
+</th>
+<td>
+2022-05-22 12:09:43 UTC
+</td>
+<td>
+70343
+seconds, or
+19.54
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/547.html'>FluxRepeatRocket</a>
+</th>
+<td>
+2022-05-22 14:40:59 UTC
+</td>
+<td>
+79517
+seconds, or
+22.09
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/589.html'>idek4rmy</a>
+</th>
+<td>
+2022-05-22 17:22:44 UTC
+</td>
+<td>
+89072
+seconds, or
+24.74
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/118.html'>ROP_Lobsters</a>
+</th>
+<td>
+2022-05-22 19:19:40 UTC
+</td>
+<td>
+96180
+seconds, or
+26.72
+hours
+</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</body>
+</html>
